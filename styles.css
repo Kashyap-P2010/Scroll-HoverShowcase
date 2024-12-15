@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    color: #fff;
+  }
+  
+  .main-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  #progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #ff6f61;
+    width: 0;
+    z-index: 9999;
+  }
+
+  .animation-section {
+    height: 100vh;
+    padding: 5% 10%;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #transform-header .cover-card {
+    height: 100vh;
+    background: #6b73ff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .reveal-image {
+    width: 300px;
+    height: 200px;
+    background: url('https://via.placeholder.com/300') center/cover no-repeat;
+    opacity: 0;
+    transform: translateY(30px);
+    border-radius: 10px;
+  }
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    width: 300px;
+    height: 200px;
+    background: url('https://via.placeholder.com/300') center/cover no-repeat;
+    margin: 0 10px;
+    transform: translateX(100%);
+  }
+  .card-stack {
+    position: relative;
+  }
+  
+  .stack-card {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: #ff6f61;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .hover-gallery {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .hover-box {
+    width: 150px;
+    height: 150px;
+    background: #6b73ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-box.scale:hover {
+    transform: scale(1.1);
+  }
+  
+  .hover-box.rotate:hover {
+    transform: rotate(10deg);
+  }
+  
+  .hover-box.flip:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .hover-box.glow:hover {
+    box-shadow: 0 0 15px 5px #6b73ff;
+  }
+  
+  .hover-box.shadow:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
