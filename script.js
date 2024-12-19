@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  preloader.classList.add("hidden"); 
+  setTimeout(() => {
+    preloader.remove(); 
+  }, 500); 
+});
+
 window.addEventListener("scroll", () => {
   const progress =
     (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
