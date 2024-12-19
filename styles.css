@@ -117,7 +117,7 @@
   .reveal-image {
     width: 300px;
     height: 200px;
-    background: url('https://via.placeholder.com/300') center/cover no-repeat;
+    background: url('https://fakeimg.pl/600x400') center/cover no-repeat;
     opacity: 0;
     transform: translateY(30px);
     border-radius: 10px;
@@ -130,7 +130,7 @@
   .carousel-item {
     width: 300px;
     height: 200px;
-    background: url('https://via.placeholder.com/300') center/cover no-repeat;
+    background: url('https://fakeimg.pl/600x400') center/cover no-repeat;
     margin: 0 10px;
     transform: translateX(100%);
   }
